@@ -37,10 +37,10 @@ Gli N bit di indirizzo possono variare da 0 fino ad un massimo di 16 bit. Gli in
 memoria sono tutti di 16 bit.
 
 Se il numero di bit di N è inferiore a 16, l’indirizzo viene esteso con 0 sui bit più
-significativi. Ad esempio:
-(N = 7) 1010111 –> 0000000001010111 
-(N = 16) 1110000001010111 –> 1110000001010111 
-(N = 0) 0000000000000000 –> 0000000000000000 
+significativi. Ad esempio: //
+(N = 7) 1010111 –> 0000000001010111 // 
+(N = 16) 1110000001010111 –> 1110000001010111 // 
+(N = 0) 0000000000000000 –> 0000000000000000 //
 
 Tutti i bit su W devono essere letti sul fronte di salita del clock.
 La sequenza di ingresso è valida quando il segnale START è alto (=1) e termina quando il
