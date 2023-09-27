@@ -1,7 +1,7 @@
 # polimi_retilogiche_2022-23
 Prova finale del corso di Reti Logiche aa 2022/23 voto: 30L/30
 
-Descrizione generale
+## Descrizione generale
 La specifica della “Prova Finale (Progetto di Reti Logiche)” per l’Anno Accademico
 2022/2023 chiede di implementare un modulo HW (descritto in VHDL) che si interfacci con
 una memoria e che rispetti le indicazioni riportate nella seguente specifica.
@@ -16,7 +16,7 @@ primarie. Le uscite sono le seguenti: quattro da 8 bit (Z0, Z1, Z2, Z3) e una da
 Inoltre, il modulo ha un segnale di clock CLK, unico per tutto il sistema e un segnale di reset
 RESET anch’esso unico.
 
-Funzionamento
+## Funzionamento
 All’istante iniziale, quello relativo al reset del sistema, le uscite hanno i seguenti valori:
 Z0, Z1, Z2 e Z3 sono 0000 0000, DONE è 0.
 
@@ -38,9 +38,9 @@ memoria sono tutti di 16 bit.
 
 Se il numero di bit di N è inferiore a 16, l’indirizzo viene esteso con 0 sui bit più
 significativi. Ad esempio:
-(N = 7) 1010111 –> 0000000001010111
-(N = 16) 1110000001010111 –> 1110000001010111
-(N = 0) 0000000000000000 –> 0000000000000000
+(N = 7) 1010111 –> 0000000001010111 
+(N = 16) 1110000001010111 –> 1110000001010111 
+(N = 0) 0000000000000000 –> 0000000000000000 
 
 Tutti i bit su W devono essere letti sul fronte di salita del clock.
 La sequenza di ingresso è valida quando il segnale START è alto (=1) e termina quando il
